@@ -208,7 +208,7 @@ input, select, textarea {
   padding-left: 0px;
   padding-bottom: 10px;
   text-align: center;
-  width: min-content;
+  width: 80%;
   border-left: 0px;
 }
 
