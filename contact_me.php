@@ -8,37 +8,45 @@ date_default_timezone_set('America/Argentina/Buenos_Aires');
 
 // $email_to ="info@ralseff.com";
 
-$name = $_REQUEST['name'];
-$wp = $_REQUEST['wp'];
-$msj = $_REQUEST['consulta'];
+$name = $_REQUEST['nombre'];
+$last = $_REQUEST['apellido'];
+$tel = $_REQUEST['telefono'];
+$email = $_REQUEST['email'];
+$obra = $_REQUEST['obra'];
+$mensaje = $_REQUEST['mensaje'];
 
 
 $email_subject = "Consulta campaña Ralseff";
 
 // Aquí se deberían validar los datos ingresados por el usuario
-if(!isset($_POST['name']) ||
-!isset($_POST['wp']) ||
-!isset($_POST['consulta'])) {
+if(!isset($_POST['nombre']) ||
+!isset($_POST['apellido']) ||
+!isset($_POST['telefono']) ||
+!isset($_POST['email']) ||
+!isset($_POST['obra'])) {
 
 echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
 echo "Por favor, vuelva atrás y verifique la información ingresada<br />";
 die();
 }
 
-$email_message = "Detalles del formulario :\n\n";
-$email_message .= "Nombre: " . $_POST['name'] . "\n";
-$email_message .= "Whatsapp: " . $_POST['wp'] . "\n";
-$email_message .= "Mensaje: " . $_POST['consulta'] . "\n";
+// $email_message = "Detalles del formulario :\n\n";
+// $email_message .= "Nombre: " . $_POST['name'] . "\n";
+// $email_message .= "Whatsapp: " . $_POST['wp'] . "\n";
+// $email_message .= "Mensaje: " . $_POST['consulta'] . "\n";
 $email_message2 = "<h1>Detalles del formulario :</h1><br>";
-$email_message2 .= "<p>Nombre: " . $_POST['name'] ."</p>";
-$email_message2 .= "<p>Whatsapp: " . $_POST['wp'] ."</p>";
-$email_message2 .= "<p>Mensaje: " . $_POST['consulta'] ."</p>";
+$email_message2 .= "<p>Nombre: " . $_POST['nombre'] ."</p>";
+$email_message2 .= "<p>Apellido: " . $_POST['apellido'] ."</p>";
+$email_message2 .= "<p>Teléfono: " . $_POST['telefono'] ."</p>";
+$email_message2 .= "<p>Mail: " . $_POST['email'] ."</p>";
+$email_message2 .= "<p>Obra social: " . $_POST['obra'] ."</p>";
+$email_message2 .= "<p>Mensaje: " . $_POST['mensaje'] ."</p>";
 
 //inicio script grabar datos en csv
-$fichero = 'Curso secretariado larga.csv';//nombre archivo ya creado
+$fichero = 'consultas landing.csv';//nombre archivo ya creado
 //crear linea de datos separado por coma
 $fecha=date("d-m-y H:i:s");
-$linea = $fecha.";".$name.";".$wp.";".$msj."\n";
+$linea = $fecha.";".$name.";".$last.";".$tel.";".$email.";".$obra.";".$mensaje."\n";
 // Escribir la linea en el fichero
 file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
 //fin grabar datos
@@ -51,21 +59,30 @@ $mail->isSMTP();
 $mail->SMTPDebug = 0;
 $mail->Debugoutput = 'html';
 
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = 587;
-$mail->SMTPSecure = 'tls';
+$mail->Host = 'mail.clinicasantaluciasalta.com';
+$mail->Port = 2525;
 $mail->SMTPAuth = true;
-$mail->Username = 'ralseffenvios@gmail.com';
-$mail->Password = 'Ralseffenvio';
-$mail->setFrom('ralseffenvios@gmail.com', 'ralseff');
+$mail->SMTPSecure = false;
+$mail->SMTPAutoTLS = false;
+// $mail->SMTPOptions = array(
+//     'ssl' => array(
+//         'verify_peer' => false,
+//         'verify_peer_name' => false,
+//         'allow_self_signed' => true
+//     )
+// );
+$mail->Username = 'info-clinicasantaluciasalta.com';
+$mail->Password = 'santsalta159';
+$mail->setFrom('info@clinicasantaluciasalta.com', 'Clínica Santa Lucía');
 
-$mail->addReplyTo('consultas@ralseff.com','ralseff');
-$mail->addAddress('consultas@ralseff.com','ralseff');
+$mail->addReplyTo('info@clinicasantaluciasalta.com','Clínica Santa Lucía');
+
+$mail->addAddress('info@clinicasantaluciasalta.com','Cl�nica Santia Luc�a');
 // $mail->addCc('ralseff@chimpancedigital.com.ar','chimpance');
 $mail->isHTML(true);
 $mail->Subject = $email_subject;
 $mail->Body    = $email_message2;
-$mail->AltBody = $email_message;
+// $mail->AltBody = $email_message;
 
 $mail->CharSet = 'UTF-8';
 if (!$mail->send()) {
