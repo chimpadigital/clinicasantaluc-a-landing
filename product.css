@@ -232,7 +232,7 @@ input, select, textarea {
   .hero {
     height: auto;
 }
-.nav{background-color: #09233D}
-h4{font-size: 13px}
+.nav{background-color: #09233D;position: fixed;z-index: 1;width: 100%;}
+h4{font-size: 19px;}
 .logo{height: 70px;}
 }
