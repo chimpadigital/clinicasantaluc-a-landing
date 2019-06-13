@@ -8,7 +8,21 @@ body{
   max-width: 1110px;
 }
 
-h3{color: #3898DC}
+h3{    color: #ffffff;
+  text-transform: lowercase;}
+
+  .medicos h5 {
+    font-weight: 900;
+    color: #3898DC;
+    font-size: 18px;
+}
+.medicos p {
+  margin-bottom: 6px;
+  padding-top: 10px;
+  border-bottom: 2px solid #22B9AB;
+  width: fit-content;
+  
+}
 .display-4{
   font-size: 2.6rem;
   font-weight: 900;
@@ -47,6 +61,8 @@ h3{color: #3898DC}
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
+
+ .logo{height: 80px;}
 
 .product-device {
   position: absolute;

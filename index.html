@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="product.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/utility.css">
   </head>
 
@@ -32,35 +33,56 @@
     <section class="hero position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-7 text-white scale-xl">
+                <div class="col-12 col-lg-7  scale-xl">
                     <div class="row nav">
-                        <div class="col-4 py-lg-5 py-3">
-                            <img src="img/iconos/logo-blanco.svg" class="logo" alt="Clínica de ojos Santa Lucía Salta">
+                        <div class="col-4 pt3 pb5">
+                            <img src="img/iconos/logo-blanco.svg" class="logo wow fadeInDown" alt="Clínica de ojos Santa Lucía Salta">
                         </div>
-                        <div class="col-8 py-lg-5 py-3 pl-0 my-auto">
-                            <img src="img/iconos/ubicacion.svg" class="fl pr-2" alt="">
+                        <div class="col-8 pt3 pb5 my-auto text-right">
+                            <a href="#form" class="btn btn-md btn-info br0">SACAR TURNO <img src="img/iconos/visibility.svg" alt=""></a>
+                            <!-- <img src="img/iconos/ubicacion.svg" class="fl pr-2" alt="">
                             <h4 class="b--green bb bw-2 bw1-ns pb-lg-1 pb-2">
                                     CLÍNICA OFTALMOLÓGICA SALTA
-                            </h4>
+                            </h4> -->
                         </div>
 
                     </div>
-                    <h1 class="display-4 mt0-l mt7 mx-auto mx-lg-0">ESTUDIOS Y TRATAMIENTOS OFTALMOLÓGICOS</h1>
-                    <h3 class="font-weight-normal text-center text-lg-left">20 AÑOS AL CUIDADO DE TUS OJOS</h3>
+                    <h1 class="display-4 mt0-l mt7 mx-auto mx-lg-0 text-white">ESTUDIOS Y CIRUGÍAS OFTALMOLÓGICAS</h1>
+                    <h3 class="font-weight-normal text-center text-lg-left" text-white>20 AÑOS AL CUIDADO DE TUS OJOS</h3>
                     
                     <div class="row">
                        <div class="col-12">
-                           <div class="descripcion pa3 br3 mt4 mb6 mb0-l">
-                               <p>La clínica está ubicada en la capital de Salta desde 1999. Es un punto de referencia para el diagnóstico y tratamiento de enfermedades oculares, contando con el equipamiento de última generación utilizados para tal fin</p>
-
+                           <div class="descripcion pa3 br3 mt4 mb6 mb0-l text-white">
+                               <p class="mb-0">La clínica está ubicada en la capital de Salta desde 1999. Es un punto de referencia para el diagnóstico y tratamiento de enfermedades oculares, contando con el equipamiento de última generación utilizados para tal fin</p>
                            </div>
                        </div>
-                       
-
+                    </div>
+                    <div class="row mt4">
+                        <div class="col-12">
+                            <h4 class="b--green bl bw-2 bw1-ns pl-lg-3 pl-2 mb-3 text-white">CUERPO MÉDICO DE EXCELENCIA</h4>
+                        </div>
+                        <div class="col-lg-2 col-12 pr-0">
+                            <img src="img/perez.png" alt="">
+                        </div>
+                        <div class="col-lg-4 col-12 pl-0">
+                            <div class="bg-white pl3 h-100 medicos">
+                                <p>Director</p>
+                                <h5>MÉDICO MARIO<br>PEREZ ESTRADA</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-12 pr-0">
+                            <img src="img/aria.png" alt="">
+                        </div>
+                        <div class="col-lg-4 col-12 pl-0">
+                            <div class="bg-white pl3 h-100 medicos">
+                                <p>Director</p>
+                                <h5>MÉDICO MARCELO<br>MARTINEZ ARIAS</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12">
-                    <a href="#form" class="btn btn-lg btn-info br0 turno">SACAR TURNO <img src="img/iconos/visibility.svg" alt=""></a>
+                    
                 </div>
             </div>
         </div>
@@ -76,7 +98,7 @@
                     <div class="form">
                         <div class="form-title pa3 text-center text-white">
                             <h2>
-                                TURNOS EXPRESS
+                                ¿En que te podemos ayudar?
                             </h2>
                         </div>
                         <form action="contact_me.php" method="POST" class="pa4">
@@ -192,6 +214,10 @@
     <!-- <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/holder.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+            new WOW().init();
+            </script>
     <script>
 $(document).ready(function () {
     $(window).scroll(function () {
