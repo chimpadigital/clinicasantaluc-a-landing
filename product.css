@@ -1,4 +1,4 @@
-
+html{scroll-behavior: smooth}
 body{
   background-color: #122B44;
   font-family: 'Open Sans', sans-serif;
@@ -148,6 +148,27 @@ input, select, textarea {
 }
 
 .overflow-hidden { overflow: hidden; }
+@media (min-width:1920px){
+  .product-device {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 122vh;
+    background-image: url(../img/bg-hero.png);
+    background-position: -4% 94%;
+    /* transform: rotate(30deg); */
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: 162%;
+}
+.container {
+  max-width: 1410px;
+}
+.scale-xl{transform: scale(1.3) translateY(30%);}
+.form{transform: scale(1.3);}
+}
+
 @media (max-width: 768px){
   .product-device {
     position: absolute;
