@@ -185,6 +185,8 @@ input, select, textarea {
 
   .clinica {
     height: 70vh;
+    background-size: 80%;
+    background-position: right;
 }
   .product-device {
     position: absolute;
