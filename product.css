@@ -258,13 +258,13 @@ h4{font-size: 18px;}
   }
   .clinica {
     height: 88vh;
-    background: url(../img/bg-clinica-sm.jpg);
+    background: url(/landing/img/bg-clinica-sm.jpg);
     background-size: cover;
     background-position: 50% 297%;
     background-repeat: no-repeat;
 }
 h1{font-size: 1.8em!important;}
 p.medicos {
-  padding-top: 3px;
+  padding-top: 0px;
 }
 }
