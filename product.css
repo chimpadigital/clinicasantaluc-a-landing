@@ -5,11 +5,11 @@ body{
 
 
 .hero{
-  background: url(../img/bg-hero2.jpg);background-size: cover;background-repeat: no-repeat;
+  background: url(/landing/img/bg-hero2.jpg);background-size: cover;background-repeat: no-repeat;
 }
 
 .clinica{height: 103vh;
-  background: url(../img/bg-clinica.jpg);
+  background: url(/landing/img/bg-clinica.jpg);
   background-size: cover;
   background-position: center;
 }
