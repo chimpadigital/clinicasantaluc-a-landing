@@ -182,6 +182,10 @@ input, select, textarea {
 
 .overflow-hidden { overflow: hidden; }
 @media (min-width:1920px){
+
+  .clinica {
+    height: 70vh;
+}
   .product-device {
     position: absolute;
     right: 0;
