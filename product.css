@@ -3,12 +3,9 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.hero{
-  background: url(../img/bg-hero.jpg);background-size: cover;background-repeat: no-repeat;
-}
 
 .hero{
-  background: url(../img/bg-hero.jpg);background-size: cover;background-repeat: no-repeat;
+  background: url(../img/bg-hero2.jpg);background-size: cover;background-repeat: no-repeat;
 }
 
 .clinica{height: 103vh;
