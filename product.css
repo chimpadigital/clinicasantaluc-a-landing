@@ -1,23 +1,39 @@
 html{scroll-behavior: smooth}
 body{
-  background-color: #122B44;
   font-family: 'Open Sans', sans-serif;
 }
 
+.hero{
+  background: url(../img/bg-hero.jpg);background-size: cover;background-repeat: no-repeat;
+}
+
+.hero{
+  background: url(../img/bg-hero.jpg);background-size: cover;background-repeat: no-repeat;
+}
+
+.clinica{height: 103vh;
+  background: url(../img/bg-clinica.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .container {
   max-width: 1110px;
 }
 
-h3{    color: #ffffff;
-  text-transform: lowercase;}
+.color-secondary{color: #3483BB;}
+
+h3{
+  color: #ffffff;
+  /* text-transform: lowercase; */
+}
 
   .medicos h5 {
     font-weight: 900;
     color: #3898DC;
     font-size: 18px;
 }
-.medicos p {
-  margin-bottom: 6px;
+p.medicos {
+  margin-bottom: 11px;
   padding-top: 10px;
   border-bottom: 2px solid #22B9AB;
   width: fit-content;
@@ -120,8 +136,10 @@ label{
   color: #3483BB;
   font-weight: 600;
   display: block;
+  margin-bottom: 0px;
 }
 
+.w-fit-content{width: fit-content;}
 input, select, textarea {
   padding: .7rem .8rem;
   border-bottom: 2px solid #22B9AB;
@@ -148,7 +166,7 @@ input, select, textarea {
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow { box-shadow:0 0.25rem 0.75rem rgba(0, 0, 0, .1); }
 
 .flex-equal > * {
   -ms-flex: 1;
@@ -201,7 +219,7 @@ input, select, textarea {
 }
 
 .display-4 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.2;
   border-bottom: 4px solid #22B9AB;
@@ -230,9 +248,26 @@ input, select, textarea {
   z-index: -1;
 }
   .hero {
-    height: auto;
+    height: auto;    background-position: top;
 }
 .nav{background-color: #09233D;position: fixed;z-index: 1;width: 100%;}
-h4{font-size: 19px;}
-.logo{height: 70px;}
+h4{font-size: 18px;}
+.logo{    height: 41px;
+  text-align: center;
+  margin: auto;}
+  .icon-cta{    transform: rotate(90deg);
+    margin-top: -6px;
+    height: 27px;
+  }
+  .clinica {
+    height: 88vh;
+    background: url(../img/bg-clinica-sm.jpg);
+    background-size: cover;
+    background-position: 50% 297%;
+    background-repeat: no-repeat;
+}
+h1{font-size: 1.8em!important;}
+p.medicos {
+  padding-top: 3px;
+}
 }
