@@ -205,7 +205,11 @@ input, select, textarea {
   max-width: 1410px;
 }
 .scale-xl{transform:scale(1.2) translateY(15%);}
-.form-scale{transform: scale(1.2);}
+.form-scale{transform: scale(1.12);}
+.h4, h4 {
+  font-size: 1.9rem;
+}
+p{font-size: 1.4rem}
 }
 
 @media (max-width: 768px){
