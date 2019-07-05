@@ -194,7 +194,7 @@ input, select, textarea {
     top: 0;
     width: 60%;
     height: 123vh;
-    background-image: url(/landing/img/bg-hero.png);
+    background-image: url(/img/bg-hero.png);
     background-position: -39% 128%;
     /* transform: rotate(30deg); */
     background-repeat: no-repeat;
@@ -219,7 +219,7 @@ p{font-size: 1.4rem}
     top: 0;
     width: 100%;
     height: 91vh;
-    background-image: url(/landing/img/bg-sm-hero.png);
+    background-image: url(/img/bg-sm-hero.png);
     background-position: center;
     /* transform: rotate(30deg); */
     background-repeat: no-repeat;
@@ -251,7 +251,7 @@ p{font-size: 1.4rem}
   position: absolute;
   height: 260px;
   width: 100%;
-  background-image: url(/landing/img/bg-footer-sm.png);
+  background-image: url(/img/bg-footer-sm.png);
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
@@ -270,7 +270,7 @@ h4{font-size: 18px;}
   }
   .clinica {
     height: 129vh;
-    background: url(/landing/img/bg-clinica-sm.jpg);
+    background: url(/img/bg-clinica-sm.jpg);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
