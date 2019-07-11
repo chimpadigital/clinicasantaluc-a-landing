@@ -16,7 +16,7 @@ $obra = $_REQUEST['obra'];
 $mensaje = $_REQUEST['mensaje'];
 
 
-$email_subject = "Consulta campaña Clinica";
+$email_subject = "Consulta campaña Clínica de ojos";
 
 // Aquí se deberían validar los datos ingresados por el usuario
 if(!isset($_POST['nombre']) ||
@@ -77,8 +77,9 @@ $mail->setFrom('info@clinicasantaluciasalta.com', 'Clínica Santa Lucía');
 
 $mail->addReplyTo('info@clinicasantaluciasalta.com','Clínica Santa Lucía');
 
-$mail->addAddress('clinicasantalucia@gmail.com','Clinica Santia Lucia');
-// $mail->addCc('ralseff@chimpancedigital.com.ar','chimpance');
+$mail->addAddress('clinicasantalucia@gmail.com','Clínica Santia Lucia');
+$mail->addCc('cristiancastro.pr1991@gmail.com','Clínica Santia Lucia');
+$mail->addCc('quirofanosantaluciasalta@gmail.com','Clínica Santia Lucia');
 $mail->isHTML(true);
 $mail->Subject = $email_subject;
 $mail->Body    = $email_message2;
