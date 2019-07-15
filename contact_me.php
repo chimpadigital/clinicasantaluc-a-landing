@@ -77,9 +77,9 @@ $mail->setFrom('info@clinicasantaluciasalta.com', 'Clínica Santa Lucía');
 
 $mail->addReplyTo('info@clinicasantaluciasalta.com','Clínica Santa Lucía');
 
-$mail->addAddress('clinicasantalucia@gmail.com','Clínica Santia Lucia');
-$mail->addCc('cristiancastro.pr1991@gmail.com','Clínica Santia Lucia');
-$mail->addCc('quirofanosantaluciasalta@gmail.com','Clínica Santia Lucia');
+$mail->addAddress('turnosexpresssantalucia@gmail.com','Clínica Santia Lucia');
+// $mail->addCc('cristiancastro.pr1991@gmail.com','Clínica Santia Lucia');
+// $mail->addCc('quirofanosantaluciasalta@gmail.com','Clínica Santia Lucia');
 $mail->isHTML(true);
 $mail->Subject = $email_subject;
 $mail->Body    = $email_message2;
