@@ -77,7 +77,7 @@ $mail->setFrom($email, $name);
 
 $mail->addReplyTo('info@clinicasantaluciasalta.com','Clínica Santa Lucía');
 
-$mail->addAddress('sprados@chimpancedigital.com.ar','Clínica Santia Lucia');
+$mail->addAddress('sdesigncba@gmail.com','Clínica Santia Lucia'); //turnosexpresssantalucia@gmail.com
 // $mail->addCc('cristiancastro.pr1991@gmail.com','Clínica Santia Lucia');
 // $mail->addCc('quirofanosantaluciasalta@gmail.com','Clínica Santia Lucia');
 $mail->isHTML(true);
