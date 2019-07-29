@@ -73,11 +73,11 @@ $mail->SMTPAutoTLS = false;
 // );
 $mail->Username = 'info-clinicasantaluciasalta.com';
 $mail->Password = 'santsalta159';
-$mail->setFrom('info@clinicasantaluciasalta.com', 'Clínica Santa Lucía');
+$mail->setFrom($email, $name);
 
 $mail->addReplyTo('info@clinicasantaluciasalta.com','Clínica Santa Lucía');
 
-$mail->addAddress('turnosexpresssantalucia@gmail.com','Clínica Santia Lucia');
+$mail->addAddress('sprados@chimpancedigital.com.ar','Clínica Santia Lucia');
 // $mail->addCc('cristiancastro.pr1991@gmail.com','Clínica Santia Lucia');
 // $mail->addCc('quirofanosantaluciasalta@gmail.com','Clínica Santia Lucia');
 $mail->isHTML(true);
